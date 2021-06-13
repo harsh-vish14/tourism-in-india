@@ -1,0 +1,101 @@
+// @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+.home {
+  height: calc(100vh - 78px);
+  width: 100%;
+  .bgImage {
+    opacity: 0.5;
+    // position: absolute;
+    // position: fixed;
+    height: calc(100vh - 78px);
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .titleContainer {
+    z-index: 1;
+    // font-family: "Cabin", sans-serif
+    font-family: "Mate SC", serif;
+    position: absolute;
+    top: 35%;
+    left: 61px;
+    .btn {
+      background: white;
+      width: fit-content;
+      padding: 15px 20px;
+      border-radius: 5px;
+      font-weight: 700;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        transition: 0.4s;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(189, 189, 189);
+        z-index: -1;
+        border-radius: 5px;
+        top: 0px;
+        left: 0px;
+      }
+      &:hover {
+        &::after {
+          transition: 0.4s;
+          top: 10px;
+          left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 35px;
+  width: 65%;
+  font-weight: 700;
+}
+.next {
+  z-index: 1;
+  position: absolute;
+  background-color: #ffffff8a;
+  width: 150px;
+  font-size: 30px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+}
+.prev {
+  z-index: 1;
+  position: absolute;
+  background-color: #ffffff8a;
+  width: 150px;
+  font-size: 30px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  right: 155px;
+  border-radius: 20px 0px 0px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 50px;
+  }
+  .subtitle {
+    font-size: 25px;
+    width: 65%;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
+}
