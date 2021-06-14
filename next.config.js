@@ -1,6 +1,10 @@
 module.exports = {
   images: {
-    domains: ["firebasestorage.googleapis.com", "lh3.googleusercontent.com"],
+    domains: [
+      "firebasestorage.googleapis.com",
+      "lh3.googleusercontent.com",
+      "images.unsplash.com",
+    ],
   },
   env: {
     GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,

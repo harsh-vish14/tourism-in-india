@@ -28,7 +28,7 @@ const Sigin = () => {
         status: "success",
         message: "Register user successfully",
       });
-      router.push("/auth/login");
+      router.back();
       return;
     }
     setIndicatorDetails({

@@ -1,5 +1,20 @@
-const States = () => {
-  return <div>States</div>;
+import States from "../../components/states/states";
+const statesPage = ({ data }) => {
+  return <States data={data} />;
 };
 
-export default States;
+export const getStaticProps = async (context) => {
+  const res = await fetch(`http://localhost:3000/api/states`);
+  const data = await res.json();
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+  return {
+    props: { data },
+    revalidate: 10800,
+  };
+};
+
+export default statesPage;

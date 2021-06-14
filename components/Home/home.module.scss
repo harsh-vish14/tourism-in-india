@@ -1,5 +1,5 @@
 // @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+
 .home {
   height: calc(100vh - 78px);
   width: 100%;
@@ -71,8 +71,10 @@
   align-items: center;
   bottom: 0px;
   right: 0px;
+  cursor: pointer;
 }
 .prev {
+  cursor: pointer;
   z-index: 1;
   position: absolute;
   background-color: #ffffff8a;

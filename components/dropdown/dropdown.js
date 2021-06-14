@@ -44,12 +44,9 @@ const Dropdown = () => {
       </div>
       {showDropdown && (
         <div ref={dropdown} className={classes.dropdown}>
-          <div style={{ marginBottom: "9px" }}>
-            <NavLink href={`/profile/${session.user.userID}`} text="Profile" />
-          </div>
           <div className={classes.dropdownLinks}>
             <NavLink href="/" text="Home" />
-            <NavLink href="/bookmarks" text="bookmarks" />
+            <NavLink href="/states" text="States" />
           </div>
           <div className={classes.logout} onClick={logoutHandler}>
             Logout <FaSignOutAlt style={{ marginLeft: "10px" }} />

@@ -14,18 +14,19 @@ const Navbar = ({ session }) => {
           </a>
         </Link>
       </div>
-      <div className={classes.link}>
-        {session ? (
-          <>
-            <NavLink href="/" text="Home" />
-            <NavLink href="/states" text="States" />
-          </>
-        ) : (
-          <div>
-            <NavLink href="/auth/login" text="Login/SignIn" />
-          </div>
-        )}
-      </div>
+      <>
+        <div className={classes.link}>
+          <NavLink href="/" text="Home" />
+          <NavLink href="/states" text="States" />
+        </div>
+      </>
+      {session ? (
+        <div></div>
+      ) : (
+        <div>
+          <NavLink href="/auth/login" text="Login/SignIn" />
+        </div>
+      )}
       {session && <Dropdown />}
     </div>
   );

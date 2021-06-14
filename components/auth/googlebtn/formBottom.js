@@ -4,7 +4,7 @@ import { signIn } from "next-auth/client";
 const FormBottom = () => {
   const googleSignedIn = async () => {
     const result = await signIn("google", {
-      callbackUrl: "/",
+      callbackUrl: router.back(),
     });
   };
   return (

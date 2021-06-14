@@ -1,0 +1,21 @@
+.topPlacesTitle {
+  margin: 50px;
+  font-weight: 800;
+  text-align: center;
+  font-size: 50px;
+}
+.cards {
+  margin: auto;
+  width: 75vw;
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cards {
+    width: 100%;
+  }
+}
