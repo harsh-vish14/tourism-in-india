@@ -1,5 +1,5 @@
-const StateByName = () => {
-  return <div>StateByName</div>;
+const stateWithName = () => {
+  return <div>this state with name</div>;
 };
 
-export default StateByName;
+export default stateWithName;

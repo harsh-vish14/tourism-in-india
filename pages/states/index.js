@@ -3,7 +3,7 @@ const statesPage = ({ data }) => {
   return <States data={data} />;
 };
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async () => {
   const res = await fetch(`http://localhost:3000/api/states`);
   const data = await res.json();
   if (!data) {
