@@ -1,8 +1,15 @@
-import { useSession, Provider } from "next-auth/client";
-import { useEffect } from "react";
+import { Provider } from "next-auth/client";
 import Layout from "../components/layout/layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.scss";
+import Router from "next/router";
+import NProgress from "nprogress";
+import "../components/np.scss";
+Router.onRouteChangeStart = (url) => {
+  NProgress.start();
+};
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 function MyApp({ Component, pageProps }) {
   return (

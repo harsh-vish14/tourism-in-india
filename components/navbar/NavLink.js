@@ -5,10 +5,13 @@ import classes from "./navlink.module.scss";
 const NavLink = ({ href, text }) => {
   const router = useRouter();
 
-  var currentStyle = router.pathname == href ? classes.active : null;
-  if (router.pathname == "/auth/login" || router.pathname == "/auth/sigin") {
-    currentStyle = classes.active;
-  }
+  var currentStyle =
+    router.pathname == href
+      ? classes.active
+      : href == "/auth/login" || href == "/auth/sigin"
+      ? classes.active
+      : null;
+
   const style = `${classes.navlinks} ${currentStyle}`;
   return (
     <Link href={href}>
