@@ -4,6 +4,10 @@ module.exports = {
       "firebasestorage.googleapis.com",
       "lh3.googleusercontent.com",
       "images.unsplash.com",
+      "images.thrillophilia.com",
+      "thumbs.dreamstime.com",
+      "www.planetware.com",
+      "i.pinimg.com",
     ],
   },
   env: {
