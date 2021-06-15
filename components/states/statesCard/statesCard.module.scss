@@ -1,9 +1,9 @@
 .stateCard {
-  max-width: 400px;
-  min-width: 250px;
-
+  max-width: 350px;
+  min-width: 280px;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 2px 1px 3px #0000003d;
   .stateImage {
     height: 300px;
     // width: 45%;
@@ -26,13 +26,23 @@
     margin-top: -30px;
     text-transform: uppercase;
     font-size: 40px;
+    filter: drop-shadow(2px 2px 2px white);
     // background: red;
   }
   .stateLink {
     position: absolute;
     top: 260px;
+    box-shadow: 0px 0px 9px 2px #34e540;
     svg {
       color: #fff;
+    }
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
     }
     z-index: 1;
     right: 6px;
