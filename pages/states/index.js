@@ -1,8 +1,15 @@
 import States from "../../components/states/states";
 import { db } from "../../lib/dbConnection";
-import { getStatesCardData } from "../../lib/gettingandsetting";
+import Head from "next/head";
 const statesPage = ({ data }) => {
-  return <States data={data} />;
+  return (
+    <>
+      <Head>
+        <title>India Travel / states</title>
+      </Head>
+      <States data={data} />
+    </>
+  );
 };
 
 export const getStaticProps = async () => {

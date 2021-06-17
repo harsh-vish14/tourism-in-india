@@ -1,9 +1,17 @@
-import { getStateByName } from "../../lib/gettingandsetting";
+import Head from "next/head";
 import { slugToNormalConverter } from "../../lib/helper";
 import StateName from "../../components/StateName/StateName";
 import { db } from "../../lib/dbConnection";
 const stateWithName = ({ data }) => {
-  return <StateName stateData={data} />;
+  return (
+    <>
+      <Head>
+        <title>India Travel / {data.stateName}</title>
+        <meta name="description" content={data.stateData}></meta>
+      </Head>
+      <StateName stateData={data} />
+    </>
+  );
 };
 
 export const getStaticProps = async (context) => {
@@ -22,14 +30,9 @@ export const getStaticProps = async (context) => {
   state.forEach((state) => {
     stateData = state.data();
   });
-  // const response = await getStateByName(stateConvertedName);
-  // if (response.status === "error") {
-  //   return {
-  //     notFound: true,
-  //   };
-  // }
   return {
     props: { data: stateData },
+    revalidate: 10900,
   };
 };
 

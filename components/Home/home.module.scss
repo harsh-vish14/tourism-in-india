@@ -1,7 +1,7 @@
 // @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 
 .home {
-  height: calc(100vh - 78px);
+  min-height: calc(100vh - 78px);
   width: 100%;
   .bgImage {
     opacity: 0.5;
