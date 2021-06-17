@@ -1,0 +1,42 @@
+.card {
+  max-width: 370px;
+  min-width: 320px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px #0000000d;
+  .cardImage {
+    position: relative;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .cardBody {
+    width: 90%;
+
+    margin: auto;
+    .cardName {
+      text-transform: capitalize;
+      font-size: 25px;
+      font-weight: 800;
+      margin: 3px 0px;
+    }
+    .cardRating {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      svg {
+        fill: #ffc107;
+
+        filter: drop-shadow(0px 0px 1px #ffc107);
+      }
+    }
+    .cardLandmarks {
+      font-size: 15px;
+      opacity: 0.4;
+    }
+  }
+  .footer {
+    margin: 15px;
+  }
+}

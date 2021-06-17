@@ -1,4 +1,11 @@
 .stateNameBody {
+  .stateDataCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   .imageContainer {
     height: 70vh;
     position: relative;
@@ -21,5 +28,62 @@
   .content {
     width: 70%;
     margin: auto;
+    margin-top: 20px;
+  }
+}
+
+.separator {
+  h1 {
+    font-family: "Mate SC", serif;
+    text-transform: capitalize;
+    font-weight: 800;
+  }
+  margin-top: 20px;
+}
+.comment {
+  min-height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  .stateNameBody {
+    .content {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .stateNameBody {
+    .content {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .stateNameBody {
+    .content {
+      width: 99%;
+    }
+  }
+}
+
+.loading {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7952b3;
+  margin: 30px;
+  animation: rotateLoader 0.4s infinite linear;
+  width: min-content;
+  margin: auto;
+  // margin-top: 20px;
+}
+@keyframes rotateLoader {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }

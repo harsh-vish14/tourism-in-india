@@ -1,0 +1,22 @@
+.comment {
+  margin: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 4px 0px #0000000d;
+  .commentHeader {
+    display: flex;
+  }
+  img {
+    border-radius: 8px;
+  }
+  .commentDetails {
+    margin-left: 15px;
+  }
+  .message {
+    margin: 25px 10px;
+  }
+}

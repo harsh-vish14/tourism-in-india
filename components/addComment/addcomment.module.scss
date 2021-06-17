@@ -1,0 +1,90 @@
+.loading {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7952b3;
+  margin: 30px;
+  animation: rotateLoader 0.4s infinite linear;
+  width: min-content;
+  margin: auto;
+  margin-top: 20px;
+}
+.notLoggedIn {
+  width: max-content;
+  background: #7952b3;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 4px;
+  margin: auto;
+  transition: 0.4s;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    transition: 0.4s;
+    box-shadow: 4px 4px 5px #673ab7b0;
+  }
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.addComment {
+  margin-top: 10px;
+  /* background-color: var(--background-color); */
+  padding: 14px;
+  background-color: white;
+  margin-top: 26px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 0px #0000000d;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  input {
+    border-radius: 3px;
+    margin: 12px;
+    // font-size: 15px;
+    background: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 95%;
+    display: block;
+    // max-width: 600px;
+    // resize: none;
+    margin-left: 20px;
+    &:focus {
+      box-shadow: inset 0px 0px 2px #00000047;
+    }
+  }
+  div {
+    padding: 8px 19px;
+    background: #2f80ed;
+    width: fit-content;
+    border-radius: 8px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .addComment {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .addComment {
+    width: 90%;
+  }
+}
