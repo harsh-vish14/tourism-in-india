@@ -1,11 +1,11 @@
 import GoogleButton from "react-google-button";
 import classes from "./btn.module.scss";
 import { signIn } from "next-auth/client";
+import { useRouter } from "next/router";
 const FormBottom = () => {
+  const router = useRouter();
   const googleSignedIn = async () => {
-    const result = await signIn("google", {
-      callbackUrl: router.back(),
-    });
+    await signIn("google");
   };
   return (
     <div className={classes.google}>

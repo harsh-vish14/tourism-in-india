@@ -11,21 +11,21 @@ const CardDetails = [
       "https://images.unsplash.com/photo-1526711657229-e7e080ed7aa1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2066&q=80",
     title: "agra",
     content:
-      "The Agra Fort, which was once the lavish residence of the Mughal Emperors of India, showcases immaculate architectural grandeur. Walk through this historic fort and explore its impressive buildings and structures, including the Moti Masjid, Musamman Burj, Diwan-i-Khas, Shahjahani Mahal, and Jahangiri Mahal.",
+      "The Agra Fort, which was once the lavish residence of the Mughal Emperors of India, showcases immaculate architectural grandeur.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1555952238-7d76782b45f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2050&q=80",
     title: "New delhi",
     content:
-      "New Delhi is the capital of India and an administrative district of the National Capital Territory of Delhi. New Delhi is the seat of all three branches of the government of India, hosting the Rashtrapati Bhavan, Parliament House, and the Supreme Court of India.",
+      "New Delhi is the capital of India and an administrative district of the National Capital Territory of Delhi.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1580581096469-8afb38d3dbd5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2031&q=80",
     title: "Mumbai",
     content:
-      "Mumbai (previously known as Bombay until 1996) is a natural harbour on the west coast of India, and is the capital city of Maharashtra state. It is India's largest city, and one of the world's most populous cities. It is the financial capital of India and a global city. Many billionaires live there.",
+      "Mumbai (previously known as Bombay until 1996) is a natural harbour on the west coast of India, and is the capital city of Maharashtra state. It is India's largest city, and one of the world's most populous cities.",
   },
 ];
 const Home = () => {
@@ -59,6 +59,7 @@ const Home = () => {
                 layout="fill"
                 objectFit="cover"
                 loading="eager"
+                placeholder="blur"
               />
             </div>
           </Carousel.Item>
@@ -69,6 +70,7 @@ const Home = () => {
                 layout="fill"
                 objectFit="cover"
                 loading="eager"
+                placeholder="blur"
               />
             </div>
           </Carousel.Item>
@@ -79,6 +81,7 @@ const Home = () => {
                 layout="fill"
                 objectFit="cover"
                 loading="eager"
+                placeholder="blur"
               />
             </div>
           </Carousel.Item>

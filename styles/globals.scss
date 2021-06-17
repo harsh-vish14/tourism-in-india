@@ -8,7 +8,9 @@
   --title-bar-color: #c0c0c0;
   --text-color: black !important;
 }
-
+* {
+  font-family: "Poppins", sans-serif;
+}
 html,
 body {
   background-color: var(--background-color);

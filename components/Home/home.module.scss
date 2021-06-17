@@ -51,11 +51,11 @@
 }
 
 .title {
-  font-size: 70px;
+  font-size: 4.375rem;
   font-weight: 700;
 }
 .subtitle {
-  font-size: 35px;
+  font-size: 2.1875rem;
   width: 65%;
   font-weight: 700;
 }
@@ -64,7 +64,7 @@
   position: absolute;
   background-color: #ffffff8a;
   width: 150px;
-  font-size: 30px;
+  font-size: 1.875rem;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@
   position: absolute;
   background-color: #ffffff8a;
   width: 150px;
-  font-size: 30px;
+  font-size: 1.875rem;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -90,10 +90,10 @@
 }
 @media only screen and (max-width: 600px) {
   .title {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .subtitle {
-    font-size: 25px;
+    font-size: 1.5625rem;
     width: 65%;
   }
   .prev,

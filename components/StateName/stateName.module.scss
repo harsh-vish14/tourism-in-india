@@ -1,0 +1,25 @@
+.stateNameBody {
+  .imageContainer {
+    height: 70vh;
+    position: relative;
+    // background: black;
+    img {
+      opacity: 0.6;
+    }
+  }
+
+  .title {
+    font-family: "Mate SC", serif;
+    position: absolute;
+    left: 50px;
+    position: absolute;
+    top: 50vh;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px white;
+    font-size: 80px;
+  }
+  .content {
+    width: 70%;
+    margin: auto;
+  }
+}

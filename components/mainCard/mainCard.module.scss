@@ -6,11 +6,12 @@
   .cardTitle {
     position: absolute;
     z-index: 1;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-transform: capitalize;
     top: -40px;
     left: 31px;
     text-transform: uppercase;
+    filter: drop-shadow(2px 2px 2px white);
   }
   .cardContent {
     position: absolute;
@@ -29,7 +30,8 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     width: 60%;
-    // font-size: 30px;
+
+    font-size: 1.25rem;
   }
   .btn {
     position: absolute;
@@ -62,6 +64,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+  opacity: 0.8;
 }
 @media only screen and (max-width: 1000px) {
   .cardBody {

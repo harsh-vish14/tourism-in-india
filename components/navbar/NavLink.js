@@ -8,7 +8,8 @@ const NavLink = ({ href, text }) => {
   var currentStyle =
     router.pathname == href
       ? classes.active
-      : href == "/auth/login" || href == "/auth/sigin"
+      : router.pathname == href &&
+        (href == "/auth/login" || href == "/auth/sigin")
       ? classes.active
       : null;
 

@@ -13,6 +13,7 @@ const MainCard = ({ cardImage, cardTitle, cardContent }) => {
           alt={cardTitle}
           layout="fill"
           objectFit="cover"
+          placeholder="blur"
         />
       </div>
       <div>

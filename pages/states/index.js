@@ -1,11 +1,11 @@
 import States from "../../components/states/states";
+import { getStatesCardData } from "../../lib/gettingandsetting";
 const statesPage = ({ data }) => {
   return <States data={data} />;
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/states`);
-  const data = await res.json();
+  const data = await getStatesCardData();
   if (!data) {
     return {
       notFound: true,
@@ -16,5 +16,12 @@ export const getStaticProps = async () => {
     revalidate: 10800,
   };
 };
+
+// export const getStaticPaths = () => {
+//   return {
+//     paths: [],
+//     fallback: "blocking",
+//   };
+// };
 
 export default statesPage;
