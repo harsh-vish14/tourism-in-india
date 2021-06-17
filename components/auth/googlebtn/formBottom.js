@@ -5,7 +5,9 @@ import { useRouter } from "next/router";
 const FormBottom = () => {
   const router = useRouter();
   const googleSignedIn = async () => {
-    await signIn("google");
+    await signIn("google", {
+      callbackUrl: "https://india-travel-wiki.vercel.app/",
+    });
   };
   return (
     <div className={classes.google}>
