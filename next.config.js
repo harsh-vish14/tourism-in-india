@@ -8,6 +8,7 @@ module.exports = {
       "thumbs.dreamstime.com",
       "www.planetware.com",
       "i.pinimg.com",
+      "images.squarespace-cdn.com"
     ],
   },
   env: {
